@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB色混ぜスライダー</title>
+    <link rel="stylesheet" href="RGB.css">
+    <meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+
+    <div class="container">
+        <h1>色を混ぜてみよう</h1>
+        
+        <p>現在の色: <span id="colorText">rgb(128, 128, 128)</span></p>
+
+        <div class="control-group">
+            <label for="redRange">R (赤)</label>
+            <input type="range" id="redRange" min="0" max="255" value="128">
+        </div>
+
+        <div class="control-group">
+            <label for="greenRange">G (緑)</label>
+            <input type="range" id="greenRange" min="0" max="255" value="128">
+        </div>
+
+        <div class="control-group">
+            <label for="blueRange">B (青)</label>
+            <input type="range" id="blueRange" min="0" max="255" value="128">
+        </div>
+    </div>
+
+    <script src="RGB.js"></script>
+</body>
+</html>
